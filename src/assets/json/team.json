@@ -1,0 +1,19 @@
+{
+  "id": "56tg4egtwg945gv9rwf",
+  "name": "Inter",
+  "stadium": "Beira rio",
+  "country": "Brazil",
+  "player":[
+    {
+      "id": "65161vsf6vfv4fvfds64",
+      "name": "Taison",
+      "age": 33,
+      "nationality": "Brasileiro",
+      "actualTeam": null,
+      "number": 10,
+      "position": null,
+      "height": 175
+    }
+  ],
+  "date": "2001-10-19"
+}
