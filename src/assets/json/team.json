@@ -1,19 +1,132 @@
-{
+[{
   "id": "56tg4egtwg945gv9rwf",
   "name": "Inter",
+  "icon": "https://logodetimes.com/times/internacional/logo-internacional-4096.png",
+  "bio": "Sport Club Internacional, commonly known as Internacional, Inter de Porto Alegre or simply Inter, is a Brazilian professional football club based in Porto Alegre.",
+  "founded": "1909",
   "stadium": "Beira rio",
+  "capacity": "50.000",
   "country": "Brazil",
+  "manager": "Alexander Medina",
+  "president": "Alessandro Barcellos",
   "player":[
     {
       "id": "65161vsf6vfv4fvfds64",
       "name": "Taison",
+      "icon": "https://www.footyrenders.com/render/taison-3-195x540.png",
       "age": 33,
-      "nationality": "Brasileiro",
-      "actualTeam": null,
       "number": 10,
-      "position": null,
-      "height": 175
+      "position": "CENTER_FORWARD",
+      "height": 175,
+      "nationality": "Brasileiro",
+      "currentTeam": null
     }
   ],
   "date": "2001-10-19"
-}
+},
+
+  {
+    "id": "56tg4egtwg945gv9rwf",
+    "name": "Inter",
+    "icon": "https://logodetimes.com/times/internacional/logo-internacional-4096.png",
+    "bio": "Sport Club Internacional, commonly known as Internacional, Inter de Porto Alegre or simply Inter, is a Brazilian professional football club based in Porto Alegre.",
+    "founded": "1909",
+    "stadium": "Beira rio",
+    "capacity": "50.000",
+    "country": "Brazil",
+    "manager": "Alexander Medina",
+    "president": "Alessandro Barcellos",
+    "player":[
+      {
+        "id": "65161vsf6vfv4fvfds64",
+        "name": "Taison",
+        "icon": "https://www.footyrenders.com/render/taison-3-195x540.png",
+        "age": 33,
+        "number": 10,
+        "position": "CENTER_FORWARD",
+        "height": 175,
+        "nationality": "Brasileiro",
+        "currentTeam": null
+      }
+    ],
+    "date": "2001-10-19"
+  },
+  {
+    "id": "56tg4egtwg945gv9rwf",
+    "name": "Inter",
+    "icon": "https://logodetimes.com/times/internacional/logo-internacional-4096.png",
+    "bio": "Sport Club Internacional, commonly known as Internacional, Inter de Porto Alegre or simply Inter, is a Brazilian professional football club based in Porto Alegre.",
+    "founded": "1909",
+    "stadium": "Beira rio",
+    "capacity": "50.000",
+    "country": "Brazil",
+    "manager": "Alexander Medina",
+    "president": "Alessandro Barcellos",
+    "player":[
+      {
+        "id": "65161vsf6vfv4fvfds64",
+        "name": "Taison",
+        "icon": "https://www.footyrenders.com/render/taison-3-195x540.png",
+        "age": 33,
+        "number": 10,
+        "position": "CENTER_FORWARD",
+        "height": 175,
+        "nationality": "Brasileiro",
+        "currentTeam": null
+      }
+    ],
+    "date": "2001-10-19"
+  },
+  {
+    "id": "56tg4egtwg945gv9rwf",
+    "name": "Inter",
+    "icon": "https://logodetimes.com/times/internacional/logo-internacional-4096.png",
+    "bio": "Sport Club Internacional, commonly known as Internacional, Inter de Porto Alegre or simply Inter, is a Brazilian professional football club based in Porto Alegre.",
+    "founded": "1909",
+    "stadium": "Beira rio",
+    "capacity": "50.000",
+    "country": "Brazil",
+    "manager": "Alexander Medina",
+    "president": "Alessandro Barcellos",
+    "player":[
+      {
+        "id": "65161vsf6vfv4fvfds64",
+        "name": "Taison",
+        "icon": "https://www.footyrenders.com/render/taison-3-195x540.png",
+        "age": 33,
+        "number": 10,
+        "position": "CENTER_FORWARD",
+        "height": 175,
+        "nationality": "Brasileiro",
+        "currentTeam": null
+      }
+    ],
+    "date": "2001-10-19"
+  },
+  {
+    "id": "56tg4egtwg945gv9rwf",
+    "name": "Inter",
+    "icon": "https://logodetimes.com/times/internacional/logo-internacional-4096.png",
+    "bio": "Sport Club Internacional, commonly known as Internacional, Inter de Porto Alegre or simply Inter, is a Brazilian professional football club based in Porto Alegre.",
+    "founded": "1909",
+    "stadium": "Beira rio",
+    "capacity": "50.000",
+    "country": "Brazil",
+    "manager": "Alexander Medina",
+    "president": "Alessandro Barcellos",
+    "player":[
+      {
+        "id": "65161vsf6vfv4fvfds64",
+        "name": "Taison",
+        "icon": "https://www.footyrenders.com/render/taison-3-195x540.png",
+        "age": 33,
+        "number": 10,
+        "position": "CENTER_FORWARD",
+        "height": 175,
+        "nationality": "Brasileiro",
+        "currentTeam": null
+      }
+    ],
+    "date": "2001-10-19"
+  }
+]

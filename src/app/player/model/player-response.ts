@@ -1,4 +1,4 @@
-import {TeamResponse} from "./team-response";
+import {TeamResponse} from "src/app/team/model/team-response";
 
 export interface PlayerResponse {
   id: string,

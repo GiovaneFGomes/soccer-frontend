@@ -1,8 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {TeamService} from "../team/service/team.service";
 
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
   styleUrls: ['./index.component.scss']
 })
-export class IndexComponent { }
+export class IndexComponent implements OnInit{
+
+  team$ = this.teamService.findTeams()
+
+  constructor(private teamService: TeamService) {
+  }
+
+  ngOnInit(): void {
+  }
+
+}
