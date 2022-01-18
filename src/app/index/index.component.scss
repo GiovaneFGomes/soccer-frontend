@@ -9,32 +9,37 @@
   .transbox {
     width: 85%;
     height: 60%;
-    border-radius: 100px;
-    padding: 5%;
-    background-color: rgba(230, 230, 230, 0.1);
-    -webkit-backdrop-filter: blur(10%);
-    backdrop-filter: blur(10%);
-    overflow: hidden;
-    box-shadow: 2px 2px 26px rgba(0,0,0,0.3);
+    border-radius: 90px;
+    padding: 3%;
+    background-color: rgba(23, 23, 138, 0.84);
+    box-shadow: 2px 2px 100px rgba(0,0,0,0.2);
+    //-webkit-backdrop-filter: blur(10%);
+    //backdrop-filter: blur(10%);
+    //overflow: hidden;
 
     .card {
       display: flex;
+      padding: 125px;
       align-items: flex-start;
-      flex-direction: row;
       justify-content: space-evenly;
+      //flex-direction: row;
     }
 
     .cards {
       display: flex;
-      margin: 6px;
-      flex-direction: row;
-      -webkit-transition: -webkit-transform .5s ease;
-      transition: transform .3s ease;
+      margin: 15px;
       overflow: hidden;
-      -webkit-transform: scale(1.1);
-      transform: scale(1.03);
-      box-shadow: 2px 2px 26px rgba(0,0,0,0.3);
-      animation: animation 3s;
+      background: transparent;
+      box-shadow: 2px 5px 25px rgba(21, 19, 19, 0.3);
+      border-radius: 20px;
+
+      //flex-direction: row;
+      //-webkit-transition: -webkit-transform .5s ease;
+      //transition: transform .3s ease;
+      //border-radius: 35px;
+      //text-align: center;
+      //-webkit-transform: scale(1.1);
+      //transform: scale(1.03);
     }
 
   }
