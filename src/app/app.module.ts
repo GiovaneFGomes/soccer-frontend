@@ -11,6 +11,8 @@ import {TeamService} from "./team/service/team.service";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from "@angular/material/card";
 import {HttpClientModule} from "@angular/common/http";
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+
 
 @NgModule({
   declarations: [
@@ -18,14 +20,15 @@ import {HttpClientModule} from "@angular/common/http";
     IndexComponent,
     CardComponent,
     TeamComponent,
-    PlayerComponent
+    PlayerComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
   ],
   providers: [TeamService],
   bootstrap: [AppComponent]
