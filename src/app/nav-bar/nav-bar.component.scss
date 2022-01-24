@@ -1,10 +1,7 @@
-.box {
+.nav {
   height: 4.5vh;
   background-color: rgb(13, 9, 96);
-
-  //.logo {
-  //  color: #ffffff;
-  //}
+  text-align: center;
 
   .search-box {
     position: absolute;
@@ -18,7 +15,7 @@
   }
 
   .search-btn {
-    color: #e3e9ec;
+    //color: #ffff;
     float: right;
     width: 40px;
     height: 70px;
@@ -55,7 +52,7 @@
 
 }
 
-.box:hover {
+.nav:hover {
     box-shadow: 2px 2px 26px rgba(0,0,0,0.3);
     animation: animation 60s;
 }

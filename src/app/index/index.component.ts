@@ -10,8 +10,8 @@ export class IndexComponent implements OnInit{
 
   team$ = this.teamService.findTeams()
 
-  constructor(private teamService: TeamService) {
-  }
+  constructor(private teamService: TeamService) { }
+  // Por que o construtor só recebe paramêtro ?
 
   ngOnInit(): void {
   }

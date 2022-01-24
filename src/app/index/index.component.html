@@ -2,7 +2,10 @@
 <div class="index">
   <div class="transbox">
     <div class="card" *ngIf="team$ | async as team">
+      <!-- Se team$ for true, então atribui esta expressão a team (variável local) -->
+      <!-- team$ que é findTeams() na team.service -->
       <app-card [team]=n *ngFor="let n of team" class="cards"></app-card>
+      <!-- Por trás do *ngFor ele esta criando vários app-card -->
     </div>
   </div>
 </div>

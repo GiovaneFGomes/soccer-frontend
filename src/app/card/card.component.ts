@@ -15,10 +15,4 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // showName: boolean = true;
-  //
-  // alternar() {
-  //   this.showName = !this.showName;
-  // }
-
 }
