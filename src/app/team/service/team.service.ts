@@ -14,5 +14,4 @@ export class TeamService {
     return this.http.get<TeamResponse[]>(`assets/json/team.json`);
   }
 
-
 }
