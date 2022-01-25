@@ -1,4 +1,4 @@
-<mat-card class="team-card">
+<mat-card class="team-card" [routerLink]="['/card-players', team?.id]">
   <a [routerLink]="['/team', team?.id]"> <img mat-card-image src="{{team?.icon}}" alt="Photo team"> </a>
   <mat-card-content class="team-name">
     <p> {{team?.name}} </p>
