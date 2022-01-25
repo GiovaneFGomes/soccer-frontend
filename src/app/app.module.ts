@@ -48,8 +48,6 @@ import {TeamService} from "./team/service/team.service";
 // AppModule é o módulo root da aplicação. É como se fosse o root do build.gradle em Java.
 export class AppModule { }
 
-
-
 /*
 O que é modulo em Angular ?
 

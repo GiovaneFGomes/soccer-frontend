@@ -11,9 +11,8 @@ export class IndexComponent implements OnInit{
   team$ = this.teamService.findTeams()
 
   constructor(private teamService: TeamService) { }
-  // Por que o construtor só recebe paramêtro ?
+  // Por que esse construtor só recebe paramêtro ? Injecao de dependencia ?
 
-  ngOnInit(): void {
-  }
+  ngOnInit() { }
 
 }

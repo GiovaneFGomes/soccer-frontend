@@ -1,8 +1,6 @@
-<mat-card class="example-card">
+<mat-card class="team-card">
   <a [routerLink]="['/team', team?.id]"> <img mat-card-image src="{{team?.icon}}" alt="Photo team"> </a>
-  <mat-card-content class="title">
-    <p>
-      {{team?.name}}
-    </p>
+  <mat-card-content class="team-name">
+    <p> {{team?.name}} </p>
   </mat-card-content>
 </mat-card>
