@@ -5,8 +5,8 @@ import {IndexComponent} from "./index/index.component";
 import {CardPlayersComponent} from "./card-players/card-players.component";
 
 const routes: Routes = [
-  {path: '', component: IndexComponent},
-  {path: 'card-players/:id', component: CardPlayersComponent}
+  { path: '', component: IndexComponent },
+  { path: 'card-players/:id', component: CardPlayersComponent }
 ];
 
 @NgModule({

@@ -5,16 +5,13 @@ import {HttpClientModule} from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from "@angular/material/card";
-
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { CardComponent } from './card/card.component';
 import { TeamComponent } from './team/team.component';
 import { PlayerComponent } from './player/player.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-
 import { WhiteDirective } from './directive/white.directive';
-
 import {TeamService} from "./team/service/team.service";
 import { CardPlayersComponent } from './card-players/card-players.component';
 

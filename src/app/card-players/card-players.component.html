@@ -1,0 +1,18 @@
+<div class="page-player">
+
+  <div class="transbox">
+
+  <mat-card class="player-card">
+    <a [routerLink]="['/player', player?.id]"> <img mat-card-image src="{{player?.icon}}" alt="Photo player"> </a>
+    <mat-card-content class="team-player">
+      <p> {{player?.name}} </p>
+    </mat-card-content>
+  </mat-card>
+
+    <div class="card" *ngIf="player$ | async as player">
+      <app-card-players [player]=n *ngFor="let n of player" class="cards"></app-card-players>
+    </div>
+
+  </div>
+
+</div>

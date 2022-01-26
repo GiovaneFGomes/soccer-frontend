@@ -8,7 +8,7 @@ import {TeamResponse} from "../team/model/team-response";
   styleUrls: ['./card.component.scss']   // Documento para o CSS
 })
 // OnInit já vem padrão com a criação de um component com o ng g c.
-// Ele é um dos ciclo de vidas do component.
+// Ele é um dos ciclos de vidas do component.
 export class CardComponent implements OnInit {
 
   // Utilizando o decorator @Input no atributo.
@@ -24,7 +24,7 @@ export class CardComponent implements OnInit {
 }
 
 /*
-O que é component em Angular ?
+O que é component em Angular?
 
 Um component são novas tags (seletores) customizados que você poderá utilizar no seu HTML.
 

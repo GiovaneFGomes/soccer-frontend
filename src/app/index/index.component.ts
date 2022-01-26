@@ -1,17 +1,18 @@
 import {Component, OnInit} from '@angular/core';
 import {TeamService} from "../team/service/team.service";
 
+// @Component é um decorator, ou seja, adiciona mais funcionalidades a classe.
 @Component({
-  selector: 'app-index',
-  templateUrl: './index.component.html',
-  styleUrls: ['./index.component.scss']
+  selector: 'app-index',                // Nome do component
+  templateUrl: './index.component.html', // Documento para o HTML
+  styleUrls: ['./index.component.scss']   // Documento para o CSS
 })
 export class IndexComponent implements OnInit{
 
   team$ = this.teamService.findTeams()
 
+  //  Aqui estou usando a injeção de depenência
   constructor(private teamService: TeamService) { }
-  // Por que esse construtor só recebe paramêtro ? Injecao de dependencia ?
 
   ngOnInit() { }
 

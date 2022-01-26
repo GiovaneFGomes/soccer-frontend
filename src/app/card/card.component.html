@@ -1,6 +1,14 @@
+<!-- To passando o path do component CardPlayersComponent junto com o parâmetro id -->
 <mat-card class="team-card" [routerLink]="['/card-players', team?.id]">
-  <a [routerLink]="['/team', team?.id]"> <img mat-card-image src="{{team?.icon}}" alt="Photo team"> </a>
+  <!-- Estou utilizando Property Binding [team?.id], uma das maneiras de usar o Data Binding -->
+  <!-- alt (Alternative text) serve para mostrar um texto quando o elemento ao qual é aplicado não pode ser renderizado -->
+  <a [routerLink]="[team?.id]"> <img mat-card-image src="{{ team?.icon }}" alt="Photo Team"> </a>
+  <!-- <mat-card-content> destinado a blocos de texto -->
   <mat-card-content class="team-name">
-    <p> {{team?.name}} </p>
+    <!-- Aqui estou utilizando outra maneira de Dta Binding, a interpolação -->
+    <!-- Data Binding é associar informações que estão no component para o template, ou vice versa-->
+    <p> {{ team?.name }} </p>
   </mat-card-content>
 </mat-card>
+
+<!-- Todas as tags que estão escrito mat é do Angular Material-->

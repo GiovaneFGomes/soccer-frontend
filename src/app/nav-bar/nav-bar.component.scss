@@ -1,4 +1,4 @@
-.nav {
+.nav-box {
   height: 4.5vh;
   background-color: rgb(13, 9, 96);
   text-align: center;
@@ -52,7 +52,7 @@
 
 }
 
-.nav:hover {
+.nav-box:hover {
     box-shadow: 2px 2px 26px rgba(0,0,0,0.3);
     animation: animation 60s;
 }
