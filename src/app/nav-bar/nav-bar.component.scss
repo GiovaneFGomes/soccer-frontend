@@ -1,54 +1,55 @@
 .nav-box {
-  height: 4.5vh;
+  display: block; // block pra acupar toda tela, aí depois é so ajustar altura
+  height: 40px;
   background-color: rgb(13, 9, 96);
   text-align: center;
 
   .search-box {
+    width: 210px;
     position: absolute;
-    top: 25px;
-    left: 90px;
+    top: 20px;
+    left: 1750px;
     transform: translate(-50%, -50%);
+    height: 35px;
+    border-radius: 40px;
     background-color: transparent;
-    height: 40px;
-    border-radius: 50px;
-    padding: 1px;
-  }
 
-  .search-btn {
-    //color: #ffff; //estou utilizando a diretiva como exemplo pra add white
-    float: right;
-    width: 40px;
-    height: 70px;
-    border-radius: 45%;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 2s;
-  }
+    .search-txt {
+      height: 35px;
+      //width: 170px;
+      border-radius: 50%;
+      border: none;
+      background-color: transparent;
+      color: #fff;
+      font-size: 14px;
+      transition: 0.3s;
+      width: 0px;
+    }
 
-  .search-txt {
-    border: none;
-    background: none;
-    outline: none;
-    justify-content: center;
-    align-items: center;
-    float: right;
-    padding: 0;
-    color: white;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 5;
-    width: 0;
+      .search-btn {
+        //color: #ffff; //estou utilizando a diretiva como exemplo pra add white
+        float: right;
+        width: 14px;
+        height: 20px;
+        background-color: transparent;
+        margin-top: 10px;
+        transition: 2s;
+    }
+
   }
 
   .search-box:hover > .search-txt {
     width: 185px;
-    padding: 0 5px;
+    padding: 0 4px;
     background-color: #413c3c;
     border-radius: 30px;
-    size: 5px;
+    //size: 5px;
   }
+
+  //.search-box:hover > .search-btn {
+  //  background: white;
+  //}
+
 
 }
 
