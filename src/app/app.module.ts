@@ -14,6 +14,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { WhiteDirective } from './directive/white.directive';
 import {TeamService} from "./team/service/team.service";
 import { CardPlayersComponent } from './card-players/card-players.component';
+import {PlayerService} from "./player/service/player.service";
 
 // @NgModule é um decorator, assim como @Component. Ou seja, adiciona mais funcionalidades a classe,
 // acrescentando esses metadados.
@@ -27,9 +28,9 @@ import { CardPlayersComponent } from './card-players/card-players.component';
     TeamComponent,
     PlayerComponent,
     NavBarComponent,
-    // Diretiva que criei, também importada automaticamente.
-    WhiteDirective,
     CardPlayersComponent,
+    // Diretiva que criei, também importada automaticamente.
+    WhiteDirective
   ],
   // Aqui é onde declaramos outros módulos que queremos usar na aplicação.
   imports: [
@@ -40,7 +41,10 @@ import { CardPlayersComponent } from './card-players/card-players.component';
     MatCardModule,
   ],
   // Aqui é onde colocamos os serviços que vão ficar disponíveis para todos os components.
-  providers: [TeamService],
+  providers: [
+    TeamService,
+    PlayerService
+  ],
   // O bootstrap diz qual que é o component que deve ser instanciado quando executarmos a aplicação.
   bootstrap: [AppComponent]
 })
