@@ -1,13 +1,14 @@
 .nav-box {
-  display: block; // block pra acupar toda tela, aí depois é so ajustar altura
+  display: block; // block pra nav bar acupar toda tela, aí depois é so ajustar altura
   height: 40px;
   background-color: rgb(13, 9, 96);
   text-align: center;
 
   .search-box {
-    width: 210px;
+    width: 220px;
     position: absolute;
     top: 20px;
+    //left: 600px;
     left: 1750px;
     transform: translate(-50%, -50%);
     height: 35px;
@@ -16,20 +17,20 @@
 
     .search-txt {
       height: 35px;
-      //width: 170px;
+      width: 0;
       border-radius: 50%;
       border: none;
       background-color: transparent;
       color: #fff;
       font-size: 14px;
       transition: 0.3s;
-      width: 0px;
     }
 
       .search-btn {
         //color: #ffff; //estou utilizando a diretiva como exemplo pra add white
         float: right;
         width: 14px;
+        bottom: 150px;
         height: 20px;
         background-color: transparent;
         margin-top: 10px;
@@ -40,14 +41,14 @@
 
   .search-box:hover > .search-txt {
     width: 185px;
-    padding: 0 4px;
+    padding: 0 4px 0 10px;
     background-color: #413c3c;
     border-radius: 30px;
-    //size: 5px;
+    border-color: transparent;
+    size: 5px;
   }
 
-  //.search-box:hover > .search-btn {
-  //  background: white;
+  //.search-btn:hover > .search-txt {
   //}
 
 
