@@ -3,12 +3,36 @@
   height: 40px;
   background-color: rgb(13, 9, 96);
   text-align: center;
+  position: fixed;
+
+  .navbar-content {
+    width: 2000px;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-items {
+    color: white;
+    display: flex;
+    font-family: -apple-system, serif;
+    font-size: 16px;
+    list-style: none;
+    text-transform: uppercase;
+  }
+
+  .navbar-items li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+  }
 
   .search-box {
     width: 220px;
     position: absolute;
     top: 20px;
-    //left: 600px;
     left: 1750px;
     transform: translate(-50%, -50%);
     height: 35px;
@@ -48,10 +72,6 @@
     size: 5px;
   }
 
-  //.search-btn:hover > .search-txt {
-  //}
-
-
 }
 
 .nav-box:hover {
@@ -60,6 +80,7 @@
 }
 
 @keyframes animation {
+
   30% {
     opacity: 30;
   }
@@ -67,4 +88,5 @@
     background-color: rgba(23, 23, 138, 0.84);
     opacity: 50;
   }
+
 }
