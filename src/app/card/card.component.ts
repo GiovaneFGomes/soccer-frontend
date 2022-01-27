@@ -12,8 +12,8 @@ import {TeamResponse} from "../team/model/team-response";
 export class CardComponent implements OnInit {
 
   // Utilizando o decorator @Input no atributo.
-  // É ele quem vai disponibilizar a comunicação desse componente com outros componentes,
-  // é quem permite que o pai se comunique com o componente filho.
+  // @Input é utilizado para passar informações do component pai para o component filho.
+  // É ele quem disponibiliza essa comunicação entre components.
   @Input() team?: TeamResponse
 
   constructor() { }
