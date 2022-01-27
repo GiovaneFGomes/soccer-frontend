@@ -1,6 +1,6 @@
 ul {
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
@@ -14,13 +14,13 @@ ul li {
   height: 80px;
   background: #262626;
   margin: 0 10px;
-  //margin: 0 720px;
   border-radius: 50%;
   transition: .5s;
 }
 
 ul li:hover {
-  background: #0070ff;
+  //background: rgb(95, 8, 206);
+  background-color: rgb(13, 9, 96);
 }
 
 ul li span {
