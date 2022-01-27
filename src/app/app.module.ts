@@ -15,6 +15,7 @@ import { WhiteDirective } from './directive/white.directive';
 import {TeamService} from "./team/service/team.service";
 import { CardPlayersComponent } from './card-players/card-players.component';
 import {PlayerService} from "./player/service/player.service";
+import { CarrouselComponent } from './carrousel/carrousel.component';
 
 // @NgModule é um decorator, assim como @Component. Ou seja, adiciona mais funcionalidades a classe,
 // acrescentando esses metadados.
@@ -30,7 +31,8 @@ import {PlayerService} from "./player/service/player.service";
     NavBarComponent,
     CardPlayersComponent,
     // Diretiva que criei, também importada automaticamente.
-    WhiteDirective
+    WhiteDirective,
+    CarrouselComponent
   ],
   // Aqui é onde declaramos outros módulos que queremos usar na aplicação.
   imports: [
