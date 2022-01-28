@@ -4,9 +4,9 @@
   <div class="transbox">
 
   <mat-card class="player-card">
-    <a [routerLink]="['/player', player?.id]"> <img mat-card-image src="{{player?.icon}}" alt="Photo player"> </a>
-    <mat-card-content class="team-player">
-      <p> {{player?.name}} </p>
+    <a [routerLink]="['/player', player?.id]"> <img mat-card-image src="{{ player?.icon }}" alt="Photo player"> </a>
+    <mat-card-content class="team-player-name">
+      <p> {{ player?.name }} </p>
     </mat-card-content>
   </mat-card>
 
