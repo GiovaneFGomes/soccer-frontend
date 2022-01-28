@@ -18,6 +18,8 @@ import { TeamComponent } from "./team/team.component";
 import { TeamService } from "./team/service/team.service";
 import { PlayerService } from "./player/service/player.service";
 import { DirectivesModule } from "../directives/directives.module";
+import {PipesModule} from "../pipes/pipes.module";
+import {SpinnerComponent} from "./animations/spinner/spinner.component";
 
 // O @NgModule é um decorator, assim como o @Component. Ou seja, vai adicionar mais funcionalidades a classe,
 // acrescentando esses metadados (declarations, imports, providers e bootstrap).
@@ -31,7 +33,9 @@ import { DirectivesModule } from "../directives/directives.module";
     IndexComponent,
     NavBarComponent,
     PlayerComponent,
-    TeamComponent
+    TeamComponent,
+    SpinnerComponent,
+    SpinnerComponent
   ],
 
   // Aqui é onde declaramos outros módulos (que contém outros components) que queremos utilizar dentro desse módulo.
@@ -41,8 +45,10 @@ import { DirectivesModule } from "../directives/directives.module";
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    // Importando módulo das diretivas
-    DirectivesModule
+    // Esse é o módulo que criei para agrupar todas as diretivas da minha aplicação
+    DirectivesModule,
+    // Esse é o módulo que criei para agrupar todos os pipes da minha aplicação
+    PipesModule
   ],
 
   // Aqui é onde colocamos os serviços que vão ficar disponíveis para todos os components declarados nesse módulo.

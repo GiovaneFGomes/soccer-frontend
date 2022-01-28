@@ -9,6 +9,7 @@ import {TeamService} from "../team/service/team.service";
 })
 export class IndexComponent implements OnInit{
 
+  // É por convenção que se utiliza o símbolo de dólar nos atributos quando se está trabalhando com Observables
   team$ = this.teamService.findTeams()
 
   //  Aqui estou usando a injeção de depenência

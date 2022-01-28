@@ -3,11 +3,16 @@
   <div class="transbox">
     <!-- Se team$ for true, então atribui esta expressão a team (variável local) -->
     <!-- team$ que é findTeams() na team.service -->
-    <div class="card" *ngIf="team$ | async as team">
+
+    <!-- Estou utilizando o Pipe async -->
+    <div class="card" *ngIf="team$ | async as team; else loading">
       <!-- Por trás do *ngFor ele esta criando vários app-card -->
       <!-- Usando o @Input, conseguimos utilizar a propriedade team, que é Property Binding [team] -->
       <app-card [team]=n *ngFor="let n of team" class="cards"></app-card>
     </div>
+    <ng-template #loading>
+      <app-spinner></app-spinner>
+    </ng-template>
     <app-carrousel></app-carrousel>
     </div>
 </div>

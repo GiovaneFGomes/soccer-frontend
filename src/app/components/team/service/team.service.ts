@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import { HttpClient } from "@angular/common/http";
-import { Observable } from "rxjs";
+import {delay, Observable} from "rxjs";
 import { TeamResponse } from "../model/team-response";
 
 // Esse decorator faz o Angular ter o conhecimento que essa classe pode ser usada como uma injeção de dependência
@@ -22,7 +22,10 @@ export class TeamService {
   // Nome do método / tipo do retorno
   public findTeams(): Observable<TeamResponse[]> {
     // Todos os métodos http, assim como o get, retornam um Observable
-    return this.http.get<TeamResponse[]>(`assets/json/team.json`);
+    return this.http.get<TeamResponse[]>(`assets/json/team.json`)
+      .pipe(
+        delay(2000)
+      );
   }
 
 }

@@ -7,7 +7,8 @@
   <mat-card-content class="team-name">
     <!-- Aqui estou utilizando outra maneira de Data Binding, a interpolação -->
     <!-- Data Binding é associar informações que estão no component para o template, ou vice versa-->
-    <p> {{ team?.name }} </p>
+    <!-- Utilizando pipe criado por mim -->
+    <p> {{ team?.name | camelCase }} </p>
   </mat-card-content>
 </mat-card>
 
