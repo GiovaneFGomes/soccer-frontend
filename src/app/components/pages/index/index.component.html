@@ -1,19 +1,33 @@
 <app-nav-bar></app-nav-bar>
 <div class="index">
   <div class="transbox">
-    <!-- Se team$ for true, então atribui esta expressão a team (variável local) -->
-    <!-- team$ que é findTeams() na team.service -->
 
     <!-- Estou utilizando o Pipe async -->
+
+    <!-- Eu uso esse async só no ngIf porque eu preciso ir no servidor buscar os dados uma vez
+    eu não preciso me inscrever no Observable de novo, que no caso o Observable é o findTeams().
+    POrque o async faz isso para mim. O async faz o subscribe no Observable e Promise.
+    Eu não preciso disso então: ( *ngFor="let n of team$ | async" ) repetindo o async.
+    É só utilizar os dados que chegam em team$ e que vai ser atribuídos a essa variável local team,
+    que depois é usada no *ngFor -->
     <div class="card" *ngIf="team$ | async as team; else loading">
+
+      <!-- Eu só vou fazer a iteração com for caso esse team$ for carregado,  -->
+
       <!-- Por trás do *ngFor ele esta criando vários app-card -->
       <!-- Usando o @Input, conseguimos utilizar a propriedade team, que é Property Binding [team] -->
       <app-card [team]=n *ngFor="let n of team" class="cards"></app-card>
+
       <app-arrows></app-arrows>
+
     </div>
+
+
     <ng-template #loading>
       <app-spinner></app-spinner>
     </ng-template>
+
+
     </div>
 </div>
 

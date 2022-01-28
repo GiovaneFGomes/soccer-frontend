@@ -18,6 +18,7 @@ import {SpinnerComponent} from "./animations/spinner/spinner.component";
 import { ArrowsComponent } from './animations/arrows/arrows.component';
 import {CarrouselComponent} from "./animations/carrousel/carrousel.component";
 import {ServicesModule} from "../services/services.module";
+import { PlayerComponent } from './pages/player/player.component';
 
 // O @NgModule é um decorator, assim como o @Component. Ou seja, vai adicionar mais funcionalidades a classe,
 // acrescentando esses metadados (declarations, imports, providers e bootstrap).
@@ -31,7 +32,8 @@ import {ServicesModule} from "../services/services.module";
     IndexComponent,
     NavBarComponent,
     SpinnerComponent,
-    ArrowsComponent
+    ArrowsComponent,
+    PlayerComponent
   ],
 
   // Aqui é onde declaramos outros módulos (que contém outros components) que queremos utilizar dentro desse módulo.

@@ -1,19 +1,43 @@
 <!--<app-nav-bar></app-nav-bar>-->
-<div class="page-player">
+<!--<div class="page-player">-->
 
-  <div class="transbox">
+<!--  <div class="transbox">-->
 
-  <mat-card class="player-card">
-    <a [routerLink]="['/player', player?.id]"> <img mat-card-image src="{{ player?.icon }}" alt="Photo player"> </a>
-    <mat-card-content class="team-player-name">
-      <p> {{ player?.name }} </p>
-    </mat-card-content>
-  </mat-card>
+<!--  <mat-card class="player-card">-->
+<!--    <a [routerLink]="['/player', player?.id]"> <img mat-card-image src="{{ player?.icon }}" alt="Photo player"> </a>-->
+<!--    <mat-card-content class="team-player-name">-->
+<!--      <p> {{ player?.name }} </p>-->
+<!--    </mat-card-content>-->
+<!--  </mat-card>-->
+<!--    <div class="card" *ngIf="player$ | async as player">-->
+<!--      <app-card-players [player]=n *ngFor="let n of player" class="cards"></app-card-players>-->
+<!--    </div>-->
 
-    <div class="card" *ngIf="player$ | async as player">
-      <app-card-players [player]=n *ngFor="let n of player" class="cards"></app-card-players>
-    </div>
+<!--  </div>-->
 
-  </div>
+<!--</div>-->
 
-</div>
+
+
+<mat-card class="player-card" >
+  <a [routerLink]="[player?.id]"> <img mat-card-image src="{{ player?.icon }}" alt="Photo Player"> </a>
+  <mat-card-content class="player-name">
+    <p> {{ player?.name | camelCase }} </p>
+  </mat-card-content>
+</mat-card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

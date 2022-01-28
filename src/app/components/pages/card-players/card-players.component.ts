@@ -1,7 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {TeamResponse} from "../../../services/team/model/team-response";
 import {PlayerResponse} from "../../../services/player/model/player-response";
-import {PlayerService} from "../../../services/player/service/player.service";
 
 // @Component é um decorator, ou seja, adiciona mais funcionalidades a classe.
 @Component({
@@ -11,13 +9,9 @@ import {PlayerService} from "../../../services/player/service/player.service";
 })
 export class CardPlayersComponent implements OnInit {
 
-  @Input() team?: TeamResponse
   @Input() player?: PlayerResponse
 
-  player$ = this.playerService.findPlayers()
-
-  //  Aqui estou usando a injeção de depenência
-  constructor(private playerService: PlayerService) { }
+  constructor() { }
 
   ngOnInit() { }
 
