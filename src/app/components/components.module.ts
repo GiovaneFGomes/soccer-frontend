@@ -7,20 +7,17 @@ import { AppRoutingModule } from "../app-routing.module";
 import { HttpClientModule } from "@angular/common/http";
 import { MatCardModule } from "@angular/material/card";
 
-import { CardPlayersComponent } from "./card-players/card-players.component";
-import { CarrouselComponent } from "./carrousel/carrousel.component";
-import { NavBarComponent } from "./nav-bar/nav-bar.component";
-import { PlayerComponent } from "./player/player.component";
-import { IndexComponent } from "./index/index.component";
+import { CardPlayersComponent } from "./pages/card-players/card-players.component";
+import { NavBarComponent } from "./animations/nav-bar/nav-bar.component";
+import { IndexComponent } from "./pages/index/index.component";
 import { CardComponent } from "./card/card.component";
-import { TeamComponent } from "./team/team.component";
 
-import { TeamService } from "./team/service/team.service";
-import { PlayerService } from "./player/service/player.service";
 import { DirectivesModule } from "../directives/directives.module";
 import {PipesModule} from "../pipes/pipes.module";
 import {SpinnerComponent} from "./animations/spinner/spinner.component";
 import { ArrowsComponent } from './animations/arrows/arrows.component';
+import {CarrouselComponent} from "./animations/carrousel/carrousel.component";
+import {ServicesModule} from "../services/services.module";
 
 // O @NgModule é um decorator, assim como o @Component. Ou seja, vai adicionar mais funcionalidades a classe,
 // acrescentando esses metadados (declarations, imports, providers e bootstrap).
@@ -33,9 +30,6 @@ import { ArrowsComponent } from './animations/arrows/arrows.component';
     CarrouselComponent,
     IndexComponent,
     NavBarComponent,
-    PlayerComponent,
-    TeamComponent,
-    SpinnerComponent,
     SpinnerComponent,
     ArrowsComponent
   ],
@@ -50,14 +44,13 @@ import { ArrowsComponent } from './animations/arrows/arrows.component';
     // Esse é o módulo que criei para agrupar todas as diretivas da minha aplicação
     DirectivesModule,
     // Esse é o módulo que criei para agrupar todos os pipes da minha aplicação
-    PipesModule
+    PipesModule,
+    // Esse é o módulo que criei para agrupar todas as services da minha aplicação
+    ServicesModule
   ],
 
   // Aqui é onde colocamos os serviços que vão ficar disponíveis para todos os components declarados nesse módulo.
-  providers: [
-    TeamService,
-    PlayerService
-  ],
+  providers: [],
 
   // Esse metadado diz ao Angular quais são os components, directives ou pipes desse módulo que nós queremos
   // expor para outros módulos. Isso é bom, pois pode ter algum que queremos que seja privado, ou seja, só para o
@@ -68,8 +61,8 @@ import { ArrowsComponent } from './animations/arrows/arrows.component';
     CarrouselComponent,
     IndexComponent,
     NavBarComponent,
-    PlayerComponent,
-    TeamComponent
+    SpinnerComponent,
+    ArrowsComponent
   ]
 })
 export class ComponentsModule { }

@@ -8,8 +8,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentsModule } from "./components/components.module";
-import {PipesModule} from "./pipes/pipes.module";
-import {ServicesModule} from "./services/services.module";
 
 // O @NgModule é um decorator, assim como o @Component. Ou seja, vai adicionar mais funcionalidades a classe,
 // acrescentando esses metadados (declarations, imports, providers e bootstrap).

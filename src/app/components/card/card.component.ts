@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {TeamResponse} from "../team/model/team-response";
+import {TeamResponse} from "../../services/team/model/team-response";
 
 // @Component é um decorator, ou seja, adiciona mais funcionalidades a classe.
 @Component({
