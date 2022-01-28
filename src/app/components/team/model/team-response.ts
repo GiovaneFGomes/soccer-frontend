@@ -1,4 +1,4 @@
-import {PlayerResponse} from "src/app/player/model/player-response";
+import {PlayerResponse} from "src/app/components/player/model/player-response";
 
 // Essa classe corresponde a minha entidade Team.
 // Mais especificamente, é aqui onde vai ser recebido os dados de reposta do JSON, pela parte do backend.
