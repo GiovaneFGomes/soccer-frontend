@@ -6,19 +6,20 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule } from "../app-routing.module";
 import { HttpClientModule } from "@angular/common/http";
 import { MatCardModule } from "@angular/material/card";
-
-import { CardPlayersComponent } from "./pages/card-players/card-players.component";
-import { NavBarComponent } from "./animations/nav-bar/nav-bar.component";
-import { IndexComponent } from "./pages/index/index.component";
-import { CardComponent } from "./card/card.component";
-
 import { DirectivesModule } from "../directives/directives.module";
 import {PipesModule} from "../pipes/pipes.module";
+import {ServicesModule} from "../services/services.module";
+
+import { PlayersComponent } from "./pages/players/players.component";
+import { NavBarComponent } from "./animations/nav-bar/nav-bar.component";
+import { IndexComponent } from "./pages/index/index.component";
+import { CardComponent } from "./cards/card/card.component";
+
 import {SpinnerComponent} from "./animations/spinner/spinner.component";
 import { ArrowsComponent } from './animations/arrows/arrows.component';
 import {CarrouselComponent} from "./animations/carrousel/carrousel.component";
-import {ServicesModule} from "../services/services.module";
-import { PlayerComponent } from './pages/player/player.component';
+import {CardPlayersComponent} from "./cards/card-players/card-players.component";
+
 
 // O @NgModule é um decorator, assim como o @Component. Ou seja, vai adicionar mais funcionalidades a classe,
 // acrescentando esses metadados (declarations, imports, providers e bootstrap).
@@ -27,13 +28,13 @@ import { PlayerComponent } from './pages/player/player.component';
   // Aqui é onde ficam todos os components, directives e pipes que queremos utilizar nesse módulo.
   declarations: [
     CardComponent,
-    CardPlayersComponent,
     CarrouselComponent,
     IndexComponent,
     NavBarComponent,
     SpinnerComponent,
     ArrowsComponent,
-    PlayerComponent
+    CardPlayersComponent,
+    PlayersComponent
   ],
 
   // Aqui é onde declaramos outros módulos (que contém outros components) que queremos utilizar dentro desse módulo.
@@ -59,12 +60,13 @@ import { PlayerComponent } from './pages/player/player.component';
   // módulo que estamos trabalhando.
   exports: [
     CardComponent,
-    CardPlayersComponent,
     CarrouselComponent,
     IndexComponent,
     NavBarComponent,
     SpinnerComponent,
-    ArrowsComponent
+    ArrowsComponent,
+    CardPlayersComponent,
+    PlayersComponent
   ]
 })
 export class ComponentsModule { }
