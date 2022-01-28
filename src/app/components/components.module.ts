@@ -17,10 +17,12 @@ import { TeamComponent } from "./team/team.component";
 
 import { TeamService } from "./team/service/team.service";
 import { PlayerService } from "./player/service/player.service";
+import { DirectivesModule } from "../directives/directives.module";
 
 // O @NgModule é um decorator, assim como o @Component. Ou seja, vai adicionar mais funcionalidades a classe,
 // acrescentando esses metadados (declarations, imports, providers e bootstrap).
 @NgModule({
+
   // Aqui é onde ficam todos os components, directives e pipes que queremos utilizar nesse módulo.
   declarations: [
     CardComponent,
@@ -31,6 +33,7 @@ import { PlayerService } from "./player/service/player.service";
     PlayerComponent,
     TeamComponent
   ],
+
   // Aqui é onde declaramos outros módulos (que contém outros components) que queremos utilizar dentro desse módulo.
   imports: [
     CommonModule,
@@ -38,12 +41,16 @@ import { PlayerService } from "./player/service/player.service";
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    // Importando módulo das diretivas
+    DirectivesModule
   ],
+
   // Aqui é onde colocamos os serviços que vão ficar disponíveis para todos os components declarados nesse módulo.
   providers: [
     TeamService,
     PlayerService
   ],
+
   // Esse metadado diz ao Angular quais são os components, directives ou pipes desse módulo que nós queremos
   // expor para outros módulos. Isso é bom, pois pode ter algum que queremos que seja privado, ou seja, só para o
   // módulo que estamos trabalhando.
