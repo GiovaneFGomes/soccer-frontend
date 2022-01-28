@@ -63,5 +63,8 @@ export class AppModule { }
 
 
 // O que é modulo em Angular?
+
 // Um módulo é um arquivo que ajuda a organizar a nossa aplicação. É nele que conseguimos agrupar components,
 // directives e pipes, além de imports de outros módulos.
+
+// Comando do Angular CLI para criar um módulo - ng g m nome-do-modulo
