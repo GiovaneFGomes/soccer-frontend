@@ -58,6 +58,10 @@ ul li.next:hover span:before {
   transform: rotate(45deg) translate(0px, 25px) scaleX(1);
 }
 
+ul li .add {
+  left: 6%;
+}
+
 
 
 
@@ -90,4 +94,5 @@ ul li.prev span:before {
 ul li.prev:hover span:before {
   transform: rotate(45deg) translate(-2px, -1px) scale(1);
 }
+
 

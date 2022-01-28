@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
-// BrowserModule prepara a aplicação para ser executada em um Browser. Com ng g ele já vem padrão.
+
+// O BrowserModule exporta a infraestrutura necessária para que a aplicação possa ser executado em um navegador.
+// Quando tu cria um módulo com o Angular CLI, o CommonModule vem por padrão. Ele é quem tem as diretivas do Angular
+// como o *ngFor e *ngIf. O BrowserModule reexporta o CommonModule, por isso conseguimos usar as diretivas mesmo
+// sem importar aqui na root o CommonModule.
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
@@ -17,24 +21,25 @@ import { CardPlayersComponent } from './card-players/card-players.component';
 import {PlayerService} from "./player/service/player.service";
 import { CarrouselComponent } from './carrousel/carrousel.component';
 
-// @NgModule é um decorator, assim como @Component. Ou seja, adiciona mais funcionalidades a classe,
-// acrescentando esses metadados.
+// O @NgModule é um decorator, assim como o @Component. Ou seja, vai adicionar mais funcionalidades a classe,
+// acrescentando esses metadados (declarations, imports, providers e bootstrap).
 @NgModule({
-  // Aqui é onde ficam os components, directives e pipes.
+  // Aqui é onde ficam todos os components, directives e pipes que queremos utilizar nesse módulo.
   declarations: [
     AppComponent,
     IndexComponent,
-    // Daqui pra baixo são components que eu criei. A importação foi feita automática por causa do ng g.
+    // Daqui para baixo são components que eu criei. A importação e declaração foram feitas automaticamente
+    // devido ao comando do CLI.
     CardComponent,
-    TeamComponent,
-    PlayerComponent,
-    NavBarComponent,
     CardPlayersComponent,
-    // Diretiva que criei, também importada automaticamente.
-    WhiteDirective,
-    CarrouselComponent
+    CarrouselComponent,
+    NavBarComponent,
+    PlayerComponent,
+    TeamComponent,
+    // Diretiva que criei, também foi importada e declarada automaticamente.
+    WhiteDirective
   ],
-  // Aqui é onde declaramos outros módulos que queremos usar na aplicação.
+  // Aqui é onde declaramos outros módulos (que contém outros components) que queremos utilizar dentro desse módulo.
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -42,21 +47,21 @@ import { CarrouselComponent } from './carrousel/carrousel.component';
     BrowserAnimationsModule,
     MatCardModule,
   ],
-  // Aqui é onde colocamos os serviços que vão ficar disponíveis para todos os components.
+  // Aqui é onde colocamos os serviços que vão ficar disponíveis para todos os components declarados nesse módulo.
   providers: [
     TeamService,
     PlayerService
   ],
-  // O bootstrap diz qual que é o component que deve ser instanciado quando executarmos a aplicação.
+  // Só é no root module que tem esse metadado bootstrap, onde vai ser o responsável por fazer a inicialização
+  // (bootstrapping) da aplicação. É aqui que definimos qual é o component(s) que queremos inicializar.
+  // Nesse caso, é o AppComponent (<app-root>), onde também já foi inserida no <body> do index.html, sendo a página
+  // padrão da aplicação.
   bootstrap: [AppComponent]
 })
-// AppModule é o módulo root da aplicação. É como se fosse o root do build.gradle em Java.
+// Por convenção, AppModule é o módulo root da aplicação. É como se fosse o root do build.gradle em Java.
 export class AppModule { }
 
-/*
-O que é modulo em Angular ?
 
-O módulo é um arquivo que ajuda a organizar a nossa aplicação. É nele que conseguimos agrupar components,
-directives e pipes, além de imports de outros módulos.
-
- */
+// O que é modulo em Angular?
+// Um módulo é um arquivo que ajuda a organizar a nossa aplicação. É nele que conseguimos agrupar components,
+// directives e pipes, além de imports de outros módulos.
