@@ -1,0 +1,8 @@
+<app-nav-bar></app-nav-bar>
+<div class="page-player">
+  <div class="transbox-player">
+    <div class="card-players" *ngIf="player$ | async as player">
+      <app-card-players [player]=n *ngFor="let n of player" class="cards-players"></app-card-players>
+    </div>
+  </div>
+</div>

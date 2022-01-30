@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+
 import {TeamService} from "../../../services/team/service/team.service";
 
 // @Component é um decorator, ou seja, adiciona mais funcionalidades a classe.
@@ -7,12 +8,12 @@ import {TeamService} from "../../../services/team/service/team.service";
   templateUrl: './index.component.html', // Documento para o HTML
   styleUrls: ['./index.component.scss']   // Documento para o CSS
 })
-export class IndexComponent implements OnInit{
+export class IndexComponent implements OnInit {
 
   // É por convenção que se utiliza o símbolo de dólar nos atributos quando se está trabalhando com Observables
   team$ = this.teamService.findTeams()
 
-  //  Aqui estou usando a injeção de depenência
+  //  Aqui estou usando a injeção de dependência
   constructor(private teamService: TeamService) { }
 
   ngOnInit() { }
